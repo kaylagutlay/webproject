@@ -62,7 +62,8 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Ensures the image is behind the text */
+    z-index: 1;
+    filter: brightness(40%);
 }
 
 .text-overlay {
@@ -118,23 +119,9 @@ nav a:hover {
 
 .delicacy-entry:hover img {
     transform: scale(1.05);
-    opacity: 0.8;
 }
 
-.delicacy-text {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.delicacy-entry:hover .delicacy-text {
+.delicacy-entry:hover {
     opacity: 1;
 }
 

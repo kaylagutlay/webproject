@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f9f4;
+    margin-top: 170px; /* Adjust the top margin to account for the fixed header height */
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: #67a967;
+    color: white;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 70px 70px; 
+    align-items: center;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+header.darkened {
+    background-color: #5c8e47; /* Darker shade when scrolled near the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: #76b852;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 25px; 
+    color: #333; 
+    margin: 8px 0;
+    padding-left: 20px; 
+    position: relative;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+li {
+    font-family: 'Arial', sans-serif; 
+    font-size: 25px; 
+    color: #333; 
+    margin: 8px 0;
+    padding-left: 20px; 
+    position: relative;
+}
+
+/* Styled List Items with Hover Effect */
+li:hover {
+    background-color: #f0f8e8; /* Subtle background color on hover */
+    padding-left: 25px; /* Indentation effect on hover */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+p {
+    font-family: 'Arial', sans-serif; /* Choose a clean, readable font */
+    font-size: 25px; /* Adjust size for readability */
+    line-height: 1.6; /* Ensure comfortable spacing between lines */
+    color: #333; /* Dark gray text for better readability */
+    margin: 10px 0; /* Add spacing between paragraphs */
+    text-align: justify; /* Align text for a clean look */
+}
+
+p.bottom-text {
+    text-align: center;
+    font-style: italic;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 40px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.back-link {
+    display: inline-block;
+    font-family: 'Arial', sans-serif; /* Choose a clean, readable font */
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #76b852;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.back-link:hover {
+    background-color: #5e9a42;
+}
