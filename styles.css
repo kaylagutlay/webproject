@@ -4,7 +4,19 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f9f4;
-    margin-top: 80px; /* Adjust the top margin to account for the fixed header height */
+    margin-top: 80px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50px;
 }
 
 header {
@@ -16,7 +28,7 @@ header {
     color: white;
     display: flex; 
     justify-content: space-between; 
-    padding: 70px 70px; 
+    padding: 50px 50px; 
     align-items: center;
     z-index: 1000; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -25,13 +37,13 @@ header {
 }
 
 header.darkened {
-    background-color: #5c8e47; /* Darker shade when scrolled near the header */
+    background-color: #5c8e47; 
 }
-
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav a {
@@ -49,16 +61,16 @@ nav a:hover {
 .opening-text {
     position: relative;
     text-align: center;
-    height: 800px; /* Adjust height as needed */
-    overflow: hidden; /* Ensures the image and text stay within bounds */
-    border-radius: 8px; /* Optional: rounds the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    height: 800px; 
+    overflow: hidden; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .hero-background {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the container proportionally */
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
@@ -68,23 +80,24 @@ nav a:hover {
 
 .text-overlay {
     position: absolute;
-    top: 50%; /* Vertically centers the text */
-    left: 50%; /* Horizontally centers the text */
-    transform: translate(-50%, -50%); /* Offsets the text back to true center */
-    z-index: 2; /* Ensures the text appears above the image */
-    color: #fff; /* White text for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
-    padding: 20px; /* Optional: spacing around the text */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
 }
 
 .text-overlay h2 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 15px;
 }
 
 .text-overlay p {
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 0;
+    font-style: italic;
 }
 
 
@@ -92,28 +105,28 @@ nav a:hover {
 /* Delicacy */
 .delicacy-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
     padding: 10%;
 }
 
 .delicacy-entry {
     position: relative; 
-    max-width: 600px; /* Ensure it adjusts to grid */
+    max-width: 600px; 
     text-align: center;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px; /* Equal padding around each entry */
-    background-color: #fff; /* Optional for a cleaner look */
+    padding: 10px; 
+    background-color: #fff; 
 }
 
 .delicacy-entry img {
     width: 100%;
-    height: 350px; /* Set a fixed height */
+    height: 350px; 
     display: block;
     border-radius: 8px;
-    object-fit: cover; /* Ensures the image maintains aspect ratio and fills the container */
+    object-fit: cover; 
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -126,7 +139,7 @@ nav a:hover {
 }
 
 .delicacy-description {
-    margin-top: 20px; /* Spacing between image and paragraph */
+    margin-top: 20px; 
     font-size: 20px;
     color: #555;
     text-align: center;
@@ -134,33 +147,33 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .delicacy-container {
-        grid-template-columns: 1fr; /* Switch to one item per row on small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 .footer {
-    background-color: #5c8e47; /* Match with your header or site's theme */
+    background-color: #5c8e47; 
     color: white;
     text-align: center;
     padding: 20px;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a nice effect */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 }
 
 .footer-content p {
-    margin: 5px 0; /* Adds a bit of space between the text lines */
-    font-size: 14px; /* Adjust font size */
+    margin: 5px 0; 
+    font-size: 14px; 
 }
 
 .footer-content a {
-    color: white; /* Keep the links white for consistency */
-    text-decoration: none; /* Remove underline */
+    color: white; 
+    text-decoration: none; 
     margin: 0 5px;
 }
 
 .footer-content a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #d7ffd7; /* Slightly lighter color on hover */
+    text-decoration: underline; 
+    color: #d7ffd7; 
 }
